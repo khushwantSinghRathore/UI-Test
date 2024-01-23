@@ -30,4 +30,13 @@ export class HomePage {
 
     console.log('called', response);
   }
+
+  changemode(key: string) {
+    if (key === 'grid') {
+      this.viewmode = true;
+    }
+    if (key === 'list') {
+      this.viewmode = false;
+    }
+  }
 }

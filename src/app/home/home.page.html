@@ -5,6 +5,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div style="text-align: center; font-size: x-large; padding: 2vw">
+    <ion-icon name="list-outline" (click)="changemode('list')"></ion-icon>
+    <ion-icon name="grid-outline" (click)="changemode('grid')"></ion-icon>
+  </div>
   <ion-grid *ngIf="viewmode">
     <ion-row>
       <ion-col size="6" *ngFor="let a of apidata">
